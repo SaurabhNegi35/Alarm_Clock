@@ -101,7 +101,7 @@ body{
 }
 
 
-
+/* DIGITAL CLOCK SECTION */
 .container{
     
     min-height: 20vh;
@@ -134,6 +134,7 @@ body{
     margin-right: 10px;
 }
 
+/* Digital Clock CSS */
 #alarm-clock{
    
 
@@ -159,6 +160,10 @@ body{
     font-size: .8rem;
 }
 
+/* ALARM SETTING SECTION  */
+
+
+/* Alarm Set Button  */
 .set-alarm-field{
     margin-top: -20px;
     height: 40px;
@@ -231,5 +236,11 @@ body{
     font-size: .6rem;
 }
 
+/* FOOTER SECTION  */
+footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+    margin-top: 7vh;
+}
 
 
