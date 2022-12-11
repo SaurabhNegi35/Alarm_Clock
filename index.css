@@ -1,0 +1,235 @@
+/* FONT IMPORT SECTION */
+
+@font-face {
+    font-family: "Againts";
+    src: url(/fonts/againts.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Alarm-Clock";
+    src: url(/fonts/alarm_clock.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Game Of Squids";
+    src: url(/fonts/Game_Of_Squids.ttf) format('truetype');
+}
+
+
+
+body{
+    background-color:  #432C7A;
+    margin-top: 0%;
+    margin-left: 0%; 
+    font-family: 'Times New Roman', Times, serif;
+     margin-right: 40%;
+    /* align-items: center; */
+}
+/* ANALOG CLOCK SECTION */
+
+/* Heading */
+.alarm-clock-h1 {
+    width: 50%;
+    margin-left: 58% !important;
+    font-family: "Game Of Squids";
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    color: #498AFB;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Analog Clock Face and Dial Section */
+.clock{
+    width: 15rem;
+    margin-left: 71% !important;
+    height: 15rem;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 
+      0 0 0px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #efefef,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+    margin-top: 0px !important;
+    }
+
+/* Analog Clock Face */
+.clock-face {
+    position: relative;
+    width:100%;
+    height: 100%;
+    transform: translate(-3px);
+}
+
+/* All Dial Common Section */
+.hand {
+    width: 45%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+/* Minute Dial */
+.min-hand{
+    width: 45% !important;
+    height: 6px !important;
+    
+}
+/* Hour Dial  */
+.hour-hand{
+    width: 30% !important;
+    height: 6px !important;
+    left: 20%;
+}
+/* Second Dial */
+.second-hand{
+    width: 45% !important;
+    height: 4px !important;
+}
+
+
+
+.container{
+    
+    min-height: 20vh;
+    margin-left: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-timer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    width: 230px;
+    height: 10%;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-left: 35px;
+
+}
+
+
+.timer{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+#alarm-clock{
+   
+
+    font-family: "Alarm-Clock", sans-serif;
+    font-size: 8vw;
+    background-image: linear-gradient(180deg,
+        #80489C,
+        #FF8FB1,
+        #FCE2DB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.alarm-heading{
+    color: whitesmoke;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    margin-left: 66%;
+    font-family: "Game Of Squids";
+    font-size: .8rem;
+}
+
+.set-alarm-field{
+    margin-top: -20px;
+    height: 40px;
+    
+    padding-top: 0px;
+}
+
+.controls button{
+    background-color: #466a99;
+    border-color: #466a99;
+    color: whitesmoke;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight:500;
+    font-family: "Game Of Squids";
+    
+}
+
+.controls button:hover{
+    background-color: #204b74;
+}
+
+#myList{
+    
+    list-style-type: none;
+    
+}
+
+#myList li{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: #204b74;
+    height: 2rem;
+    margin-left: -30px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-left: 66%;
+
+}
+
+
+.time-list{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.time-list span{
+    
+    width: 160px;
+    margin-right: 18px;
+    font-family: "Game Of Squids";
+    font-size: .8rem;
+    
+}
+
+.time-list button{
+    background-color: #5d759d;
+    border-color: #5d759d;
+    border-radius: 3px;
+    border-width: 0px;
+    height: 22px;
+    color: whitesmoke;
+    font-family: "Game Of Squids";
+    font-size: .6rem;
+}
+
+
+
